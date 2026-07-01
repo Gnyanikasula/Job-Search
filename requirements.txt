@@ -1,0 +1,29 @@
+# Core backend
+fastapi==0.139.0
+uvicorn==0.49.0
+apscheduler==3.11.3
+python-multipart==0.0.32
+pydantic==2.13.4
+
+# Job scraping
+python-jobspy==1.1.82
+playwright==1.61.0
+
+# Frontend
+streamlit==1.58.0
+
+# HTTP + parsing
+requests==2.34.2
+beautifulsoup4==4.15.0
+lxml==6.1.1
+pdfplumber==0.11.10
+
+# AI
+google-genai==2.10.0
+groq==1.5.0
+
+# Pinned: ensures proper wheel, not the broken MINGW build on Windows
+numpy==2.2.6
+
+# Process management (for Docker)
+supervisor==4.2.5

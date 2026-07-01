@@ -1,0 +1,17 @@
+# Don't copy these into the image
+data/
+*.db
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+.env
+.git/
+.gitignore
+*.zip
+jsenv/
+venv/
+.venv/
+node_modules/
+.pytest_cache/
+*.log

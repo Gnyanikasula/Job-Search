@@ -1,0 +1,15 @@
+# docker-compose.yml — local Docker dev only (not used on HuggingFace)
+services:
+  job-search:
+    build: .
+    ports:
+      - "7860:7860"   # Streamlit (matches HF)
+      - "8000:8000"   # FastAPI (local inspection only)
+    volumes:
+      # Mount data dir so SQLite survives container restarts locally
+      - ./data:/app/data
+    environment:
+      # Optional: set keys here for local Docker testing
+      # (On HF, use Space Secrets instead)
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped

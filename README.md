@@ -2,7 +2,7 @@
 title: AI Job Search Pipeline
 emoji: 🎯
 colorFrom: indigo
-colorTo: emerald
+colorTo: purple
 sdk: docker
 app_port: 7860
 pinned: false

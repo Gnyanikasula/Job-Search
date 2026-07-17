@@ -6,6 +6,8 @@ python-multipart==0.0.32
 pydantic==2.13.4
 
 # Job scraping
+# NOTE: python-jobspy pins numpy==1.26.3, so we do NOT pin numpy ourselves.
+# On Linux (Docker/HF) pip pulls the correct manylinux wheel automatically.
 python-jobspy==1.1.82
 playwright==1.61.0
 
@@ -21,9 +23,3 @@ pdfplumber==0.11.10
 # AI
 google-genai==2.10.0
 groq==1.5.0
-
-# Pinned: ensures proper wheel, not the broken MINGW build on Windows
-numpy==2.2.6
-
-# Process management (for Docker)
-supervisor==4.2.5
